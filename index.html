@@ -42,6 +42,39 @@
             opacity: 0.9;
         }
 
+        .cta-section {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .cta-card {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: pulse 2s infinite;
+        }
+
+        .cta-text {
+            font-size: 1.1rem;
+            margin: 8px 0;
+            font-weight: 500;
+            color: white;
+        }
+
+        @keyframes pulse {
+            0%, 100% { 
+                transform: scale(1); 
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            }
+            50% { 
+                transform: scale(1.02); 
+                box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+            }
+        }
+
         .challenges-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -344,6 +377,13 @@
                     <div class="stat-number">3x</div>
                     <div class="stat-label">Cost Overruns from Bad Planning</div>
                 </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <div class="cta-card">
+                <p class="cta-text">👇 Click to explore interactive challenge cards below</p>
+                <p class="cta-text">💡 Expand each section for solution hints</p>
             </div>
         </div>
 
